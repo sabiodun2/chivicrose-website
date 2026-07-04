@@ -1,0 +1,114 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 50px;
+    background-color: var(--bg-navy);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar-logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar-logo img{
+    height: 75px;
+    width: auto;
+}
+
+.navbar-logo span{
+    color: var(--gold);
+    font-size: 1.7rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.navbar-links{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    justify-items: center;
+}
+
+.navbar-links a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.navbar-links a:hover{
+    color: var(--gold);
+}
+
+.navbar-quote-btn {
+    background-color: var(--gold);
+    color: var(--bg-navy);
+    padding: 10px 22px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background 0.3s ease;
+}
+
+.navbar-quote-btn:hover {
+    background-color: var(--gold-hover);
+}
+
+@media (max-width: 768px) {
+    .navbar-quote-btn {
+        margin-top: 10px;
+    }
+}
+
+.hamburger{
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span{
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    border-radius: 3px;
+}
+
+@media (max-width: 1024px){
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .hamburger{
+        display: flex;
+    }
+
+    .navbar-links{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        align-items: flex-start;
+        width: 100%;
+        background-color: var(--bg-navy);
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .navbar-links.open{
+        display: flex;
+    }
+}
