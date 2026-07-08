@@ -66,8 +66,14 @@ const Contact = () => {
                             <option>Electric Motors</option>
                             <option>Air Blowers</option>
                             <option>Fire Fighting Equipment</option>
-                            <option>Industrial Water Equipment</option>
+                            <option>Sewage/Submersible Pumps</option>
+                            <option>Industrial Valves</option>
+                            <option>Water Treatment Equipment</option>
+                            <option>Technical Consultations</option>
+                            <option>Delivery and Logistics Services</option>
+                            <option>Project Management</option>
                             <option>Solar Powered Pumps and Equipments</option>
+                            <option>Solar Appliances</option>
                         </select>
                         <textarea name="message" placeholder="Additional Details (optional)" rows="4"></textarea>
 
