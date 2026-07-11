@@ -27,7 +27,7 @@ const Gallery = () => {
                     transition={{ duration: 0.4 }}
                     onClick={() => setLightboxImage(item.image)}
                     >
-                        <img src={item.image} alt={`Product ${item.id}`} />
+                        <img src={item.image} alt={`Chivicrose product ${item.id}`} />
                     </motion.div>
                 ))}
             </div>

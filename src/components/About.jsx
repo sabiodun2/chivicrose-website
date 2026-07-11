@@ -34,7 +34,7 @@ const About = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.7 }}
                 >
-                <img src="/images/about.jpeg" alt="About Chivicrose" />
+                <img src="/images/about.jpeg" alt="Chivicrose pump equipments" />
                 </motion.div>
             </div>
         

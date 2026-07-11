@@ -5,6 +5,7 @@ import { MdEngineering } from 'react-icons/md'
 import { GiValve } from 'react-icons/gi'
 import Gallery from '../components/Gallery'
 import './Services.css'
+import { a } from 'framer-motion/client'
 
 const productCategories = [
   // Pump Services
@@ -16,6 +17,7 @@ const productCategories = [
         id: 'p1',
         image: '/images/surface pump.jpeg',
         name: 'Surface Pumps',
+        alt: 'Surface pumping machine for industrial and domestic use',
         summary: 'Above-ground pumps for water, oil, and chemical transfer. Includes centrifugal and vertical models.',
         details: `Surface, vertical, and centrifugal pumps are mechanical devices installed above ground used to transfer liquids such as water, oil, or chemicals. Centrifugal pumps use a rotating impeller to move large volumes efficiently with steady flow, while vertical pumps lift liquids from deep sources like boreholes using a space-saving vertical shaft design. Together they offer self-priming capability, pressure boosting, and reliable flow control.
 
@@ -25,6 +27,7 @@ Key uses include irrigation, industrial cooling, municipal water supply, oil and
         id: 'p2',
         image: '/images/electric motors1.jpeg',
         name: 'Electric Motors',
+        alt: 'Electric motor pump unit',
         summary: 'Compact motor-pump units offering clean, quiet, and efficient fluid movement.',
         details: `Electric motor pumps integrate an electric motor directly with a pump into a single compact assembly, converting electrical energy into hydraulic energy. They offer clean and quiet operation, instant start/stop control, variable speed operation with VFDs, high efficiency, and low maintenance compared to engine-driven alternatives.
 
@@ -34,6 +37,7 @@ Common applications include residential water supply, industrial processing, com
         id: 'p3',
         image: '/images/air.jpg',
         name: 'Air Blowers',
+        alt: 'Industrial air blower for aeration and ventilation',
         summary: 'High-volume airflow systems for aeration, ventilation, and pneumatic conveying.',
         details: `Air blowers generate a continuous, high-volume flow of air or gas at moderate pressure using rotating impellers, lobes, or fans. They provide high-volume airflow, moderate pressure generation, oil-free operation in many models, continuous duty capability, and smooth low-pulsation flow.
 
@@ -43,6 +47,7 @@ Common uses include wastewater treatment aeration, pneumatic conveying of powder
         id: 'p4',
         image: '/images/fire hydrant pump.jpeg',
         name: 'Fire Hydrant and Equipments',
+        alt: 'Fire hydrant pump and equipment for fire protection systems',
         summary: 'Complete fire protection systems delivering high-pressure water to hydrants and sprinklers.',
         details: `Fire hydrant pumps and equipment form a complete fire protection system including a fire pump, jockey pump, controllers, piping, valves, and hydrant landing valves. They provide high-pressure water delivery, automatic start-up when pressure drops, jockey pump maintenance of standby pressure, dual power source backup, and continuous flow monitoring.
 
@@ -52,6 +57,7 @@ These systems are essential in commercial buildings, industrial facilities, resi
         id: 'p5',
         image: '/images/dredge pump.jpeg',
         name: 'Sewage/Submersible Pumps',
+        alt: 'Sewage and submersible pumps for wastewater handling',
         summary: 'Heavy-duty submersible pumps for wastewater, sludge, and abrasive slurry handling.',
         details: `Sewage and submersible pumps are heavy-duty electric pumps designed to handle raw wastewater containing solids and fibrous materials, fully sealed for underwater operation. For more demanding slurry environments, dredge pumps add extra-thick casings and wear-resistant materials to handle sand, gravel, and mud at high solid content.
 
@@ -61,6 +67,7 @@ Together they offer solids handling, submerged operation, optional grinding/mace
         id: 'p6',
         image: '/images/industrial valve.jpg',
         name: 'Industrial Valves',
+        alt: 'Industrial valves for flow control and pressure regulation',
         summary: 'A full range of valves for flow control, isolation, and pressure regulation.',
         details: `Industrial valves are mechanical devices designed to control, regulate, direct, or shut off fluid flow within a piping system. We supply gate, globe, ball, butterfly, check, plug, diaphragm, pressure relief, pressure reducing, control, pinch, knife gate, and needle valves — each suited to specific flow control, isolation, or throttling needs.
 
@@ -78,6 +85,7 @@ Used across oil and gas, water and wastewater treatment, chemical processing, po
         id: 'w1',
         image: '/images/water purification system 4.jpeg',
         name: 'Water Treatment Materials',
+        alt: 'Water treatment equipment including domestic filters and industrial RO systems',
         summary: 'Filtration and treatment equipment from domestic filters to industrial RO systems.',
         details: `We supply a full range of water treatment materials including domestic water filters, softeners, large-scale Reverse Osmosis (RO) systems, and industrial effluent treatment equipment. Our process begins with water analysis to identify contaminants before designing a customized treatment solution.
 
@@ -87,6 +95,7 @@ Used for residential drinking water, industrial process water, sewage treatment,
         id: 'w2',
         image: '/images/tech consult.jpeg',
         name: 'Technical Consultations',
+        alt: 'Technical consultation for pump selection and system design',
         summary: 'Expert advice on pump selection, system design, and project implementation.',
         details: `Our technical consultation service provides professional guidance on selecting the right pumping, water treatment, or solar equipment for your specific needs — covering system design, capacity planning, and implementation strategy.
 
@@ -96,6 +105,7 @@ Available for residential, commercial, industrial, and government projects requi
         id: 'w3',
         image: '/images/delivery.jpeg',
         name: 'Delivery and Logistics Services',
+        alt: 'Reliable transport and delivery of equipment to your project site',
         summary: 'Reliable transport and delivery of equipment to your project site.',
         details: `We manage the delivery and logistics of all purchased equipment — pumps, motors, solar systems, and water treatment materials — ensuring safe and timely transport to your site, whether residential, commercial, or industrial.
 
@@ -105,6 +115,7 @@ Our logistics network covers Lagos and surrounding regions, with planning suppor
         id: 'w4',
         image: '/images/project management.jpg',
         name: 'Project Management',
+        alt: 'Project management for pumping and plumbing installations',
         summary: 'Full planning, execution, and supervision of pumping and plumbing projects.',
         details: `Our project management service covers planning, execution, supervision, and monitoring of pumping, plumbing, solar, and water treatment installations from start to finish — ensuring projects are completed on time, within budget, and to specification.
 
@@ -122,6 +133,7 @@ Suited for large commercial or industrial installations requiring coordinated mu
         id: 's1',
         image: '/images/solar pump.jpeg',
         name: 'Solar Pumps',
+        alt: 'Solar powered water pumping system for off-grid applications',
         summary: 'Off-grid water pumping powered entirely by solar energy.',
         details: `Solar powered pumps use photovoltaic panels to lift water from wells, boreholes, rivers, or storage tanks without fuel or grid power. They feature Maximum Power Point Tracking (MPPT) for optimal performance, dry-run protection, and automatic start/stop based on sunlight availability.
 
@@ -131,6 +143,7 @@ Ideal for agricultural irrigation, livestock watering, community water supply in
         id: 's2',
         image: '/images/solar appliance.jpeg',
         name: 'Solar Appliances',
+        alt: 'Solar powered household and industrial appliances for off-grid use',
         summary: 'DC-powered household and industrial appliances for off-grid use.',
         details: `Solar appliances include refrigerators, fans, lights, and water heaters engineered for direct DC operation or paired with battery storage. They offer energy-efficient design, battery backup for nighttime use, and portability for remote or mobile applications.
 
@@ -140,6 +153,7 @@ Common uses include solar refrigeration for clinics and homes, ventilation for g
         id: 's3',
         image: '/images/solar panel.png',
         name: 'Panels & Inverters',
+        alt: 'Solar panels and inverter systems for off-grid power generation',
         summary: 'Solar panels and inverter systems for reliable off-grid power generation.',
         details: `We supply grid-tie and off-grid solar panels along with inverter systems that convert and manage solar-generated electricity for use in homes, businesses, and industrial sites. These systems integrate with battery storage and other solar appliances to deliver consistent, renewable power.
 
@@ -157,6 +171,7 @@ Suited for residential solar installations, commercial backup power, rural elect
         id: 'f1',
         image: '/images/fuel dispencer.jpeg',
         name: 'Fuel Dispenser',
+        alt: 'High-quality fuel dispenser for petrol stations and industrial fuel management',
         summary: 'High-quality fuel dispensers for petrol stations and industrial fuel management.',
         details: `Fuel dispensers are precision metering devices used to transfer and measure petroleum products — petrol, diesel, kerosene, and lubricants — from storage tanks to vehicles or containers. We supply single and multi-product dispensers suited for petrol stations, depots, and industrial fuel management facilities.
 Key features include accurate digital metering, multi-hose configurations, tamper-proof flow control, and compatibility with both above-ground and underground storage tanks. Available in manual and electronic variants with optional fleet management integration.
@@ -233,10 +248,10 @@ const Services = () => {
                   transition={{ duration: 0.5 }}
                 >
                   <div className="product-detail-image">
-                    <img src={product.image} alt={product.name} />
+                    <img src={product.image} alt={product.alt} />
                   </div>
                   <div className="product-detail-info">
-                    <h3>{product.name}</h3>
+                    <h3>{product.alt}</h3>
                     <p>{product.summary}</p>
                     <button
                       className="view-details-btn"
