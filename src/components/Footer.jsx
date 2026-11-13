@@ -13,7 +13,7 @@ const Footer = () => {
                         <span>Chivicrose</span>
                     </div>
                     <p>
-                        Chivicrose Enterprise is a subsidiary of Chitex Technical Works,
+                        Chivicrose Enterprise is a subsidiary of Ovaman Pumps Ltd,
                         delivering engineering solutions and transforming essentials across
                         four critical service verticals.
                     </p>
@@ -58,7 +58,7 @@ const Footer = () => {
         
             <div className="footer-bottom">
                 <p>&copy; {new Date().getFullYear()} Chivicrose Enterprise. All rights reserved.</p>
-                <p>A subsidiary of Chitex Technical Works</p>
+                <p>A subsidiary of Ovaman Pumps Ltd</p>
             </div>
         </footer>
     )
