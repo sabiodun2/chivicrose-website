@@ -49,8 +49,8 @@ const Footer = () => {
                 <div className="footer-contact">
                     <h4>Contact Us</h4>
                     <p><FaMapMarkerAlt /> Shop 2, Taiwan Line, Coker Market, Block 12, 9 Owokoniran St, Iganmu, Orile 100011, Lagos</p>
-                    <p><FaPhone /> 07045151837</p>
-                    <p><FaWhatsapp /> 08142274668</p>
+                    <p><FaPhone /> +234 704 515 1837</p>
+                    <p><FaWhatsapp /> +234 814 227 4668</p>
                     <p><FaEnvelope /> chivicrose.ent@gmail.com</p>
                 </div>
 
